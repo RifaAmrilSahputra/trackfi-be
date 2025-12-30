@@ -20,7 +20,7 @@ async function main() {
     create: { nama_role: 'teknisi' },
   })
 
-  // 2. Admin user 
+  // 2. Admin user route
   const adminUser = await prisma.user.upsert({
     where: { email: 'admin@laporketua.com' },
     update: {
