@@ -1,10 +1,28 @@
-# 🛠️ TrackFO Backend 🛠️
+# 🖥️ TrackFO Backend
 
-━━━━━━━━━━━━━━━━━━━━━━━━
-✨ **Status:** On Develop ✨
-━━━━━━━━━━━━━━━━━━━━━━━━
+Backend **TrackFO** berbasis REST API.  
+Dipakai sebagai pusat data dan logika untuk aplikasi TrackFO Mobile.
 
-> 🚀 Backend untuk aplikasi **TrackFO**  
-> Masih dalam tahap pengembangan, fitur dan API bisa berubah.  
+---
 
-Sabarree
+## 🚧 Status
+🛠️ **Masih tahap development**  
+Struktur API dan fitur masih terus dikembangkan.
+
+---
+
+## ⚙️ Tech Stack
+- Node.js
+- Express
+- Prisma
+- MySQL
+
+---
+
+## 📱 Client
+👉 https://github.com/RifaAmrilSahputra/TrackFO-Mobile
+
+---
+
+## 👨‍💻 Developer
+Amril Nadapdap
