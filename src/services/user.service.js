@@ -113,6 +113,25 @@ async function deleteUser(id) {
   })
 }
 
+async function updateTeknisiData(id_teknisi, data) {
+  const idNum = Number(id_teknisi)
+  return prisma.dataTeknisi.update({
+    where: { id_teknisi: idNum },
+    data: {
+      no_hp: data.no_hp || '',
+      area_kerja: data.area_kerja || '',
+      alamat: data.alamat || null,
+      koordinat: data.koordinat || null,
+    },
+  })
+}
+
+async function getTeknisiById(id_teknisi) {
+  return prisma.dataTeknisi.findUnique({
+    where: { id_teknisi: Number(id_teknisi) },
+  })
+}
+
 export default {
   getUserByEmail,
   getUserById,
@@ -122,4 +141,6 @@ export default {
   createUserWithRolesAndTeknisi,
   getTeknisiUsers,
   deleteUser,
+  updateTeknisiData,
+  getTeknisiById,
 }
